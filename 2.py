@@ -3,3 +3,16 @@
 # *Пример:*
 # 2 2
 #     4 
+
+
+a = int(input('Введите число A: '))
+b = int(input('Введите число B: '))
+
+def Sum(x,y):
+    if y == 0:
+        return x
+    else:
+        if y>0:
+            return (Sum(x+1,y-1))
+    
+print(Sum(a,b))
